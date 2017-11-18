@@ -1,37 +1,62 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.github.nyholmniklas</groupId>
-  <artifactId>arithmetic</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-  <packaging>jar</packaging>
+    <groupId>com.github.nyholmniklas</groupId>
+    <artifactId>arithmetic</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <packaging>jar</packaging>
 
-  <name>arithmetic</name>
-  <url>http://maven.apache.org</url>
+    <name>Arithmetic Library for Tutorial</name>
+    <description>This is a sample library for a tutorial about
+        publishing to Maven Central
+    </description>
+    <url>http://github.com/nyholmniklas/arithmetic</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+    <scm>
+        <connection>scm:git:git://github.com/nyholmniklas/arithmetic.git</connection>
+        <developerConnection>scm:git:ssh://github.com:nyholmniklas/arithmetic.git</developerConnection>
+        <url>http://github.com/nyholmniklas/arithmetic</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>Niklas Nyholm</name>
+            <email>nyholmniklas@gmail.com</email>
+            <organization>com.github.nyholmniklas</organization>
+            <organizationUrl>http://github.com/nyholmniklas/</organizationUrl>
+        </developer>
+    </developers>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>
